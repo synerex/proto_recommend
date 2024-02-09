@@ -8,17 +8,17 @@ import "google/protobuf/timestamp.proto";
 // Recommend service message
 message Recommend
 {
-    string recommend_id = 1;
+    uint32 recommend_id = 1;
     string recommend_name = 2;
     repeated RecommendStep recommend_steps = 3;
 }
 
 message RecommendStep
 {
-    int32 transit_order = 1;
-    int32 mobility_type = 2;
-    int32 from_station_id = 3;
-    int32 to_station_id = 4;
+    uint32 transit_order = 1;
+    uint32 mobility_type = 2;
+    uint32 from_station_id = 3;
+    uint32 to_station_id = 4;
     google.protobuf.Timestamp ts = 5;
     bool is_asap = 6;
 }
