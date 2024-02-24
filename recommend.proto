@@ -16,9 +16,9 @@ message Recommend
 message RecommendStep
 {
     uint32 transit_order = 1;
-    uint32 mobility_type = 2;
-    uint32 from_station_id = 3;
-    uint32 to_station_id = 4;
+    string mobility_type = 2;
+    string from_station_id = 3;
+    string to_station_id = 4;
     google.protobuf.Timestamp ts = 5;
     bool is_asap = 6;
 }
